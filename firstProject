@@ -1,0 +1,16 @@
+import UIKit
+
+// Definir uma constante com valor inicial
+let nomeConstante = "Steve"
+
+// Definir uma variável String opcional com valor inicial
+var nomeVariavel: String? = "Jobs"
+
+// Imprimir com interpolação, usando um valor padrão para a variável opcional
+print("Constante: \(nomeConstante), Variável: \(nomeVariavel ?? "Wozniak")")
+
+// Realizar um opcional binding na variável
+if let nomeDesembrulhado = nomeVariavel {
+    // Imprimir com interpolação do valor desembrulhado
+    print("Constante: \(nomeConstante), Variável Desembrulhada: \(nomeDesembrulhado)")
+}
